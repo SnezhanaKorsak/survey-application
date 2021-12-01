@@ -29,7 +29,7 @@ function App() {
             <Router>
                 <Header/>
                 <Routes>
-                    <Route path={'/'} element={<Start/>}/>
+                    <Route path={'/survey-application'} element={<Start/>}/>
 
                     <Route path={'/start'} element={<Start/>}/>
                     <Route path={'/test'} element={<Test/>}/>

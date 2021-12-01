@@ -26,7 +26,7 @@
     align-items: center;
     background: linear-gradient(131deg, #fd9c54, #ff7a7f, #e66b95, #6a2bbe, #251b33);
     border-radius: 20px;
-    z-index: 30;
+    z-index: 60;
 }
 
 .testContainerTop:hover {
@@ -36,14 +36,14 @@
 
 .testContainerMiddle {
     position: absolute;
-    top: 10px;
+    top: 12px;
     left: 10px;
     height: 400px;
     width: 420px;
-    background: #542a70;
-    opacity: 50%;
+    background: #734295;
+    opacity: 40%;
     border-radius: 20px;
-    z-index: 20;
+    z-index: 40;
 }
 
 .testContainerBottom {
