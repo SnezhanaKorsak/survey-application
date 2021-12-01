@@ -64,7 +64,6 @@ export const getQuestionTC = () => {
         .then(res => res.json())
          .then(res => {
              dispatch(setQuestion(res.questions))
-             console.log(res.questions)
          })
         //dispatch(setCurrentQuestion(id))
     }

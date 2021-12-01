@@ -2,7 +2,18 @@ import React, {useState} from 'react';
 import s from '../resultForQuestion/ResultForQuestion.module.css'
 
 
-export const ResultForQuestion = () => {
+type ResultForQuestionPropsType = {
+    id: number
+    userAnswer: string
+    quest: string
+}
+
+export const ResultForQuestion: React.FC<ResultForQuestionPropsType> = ({
+                                                                            id,
+                                                                            userAnswer,
+                                                                            quest
+                                                                        }) => {
+
     const [isHidden, setIsHidden] = useState(true)
 
     const hiddenBlock = () => {
@@ -12,15 +23,15 @@ export const ResultForQuestion = () => {
         <div className={s.resultForQuestionContainer}>
             <div className={s.coverBlock}>
                 <div onClick={hiddenBlock} className={s.questionNumber}>
-                    1
+                    {id}
                 </div>
                 <div className={s.questionTitle}>
-                    text question
+                    {quest}
                 </div>
 
             </div>
             {!isHidden && <div className={s.answerBlock}>
-
+                {userAnswer}
             </div>}
 
 

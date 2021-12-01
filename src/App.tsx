@@ -5,19 +5,23 @@ import {Start} from "./start/Start";
 import {Test} from "./test/Test";
 import {Results} from "./results/Results";
 import {Footer} from "./footer/Footer";
-import {Route, Routes} from 'react-router-dom';
-import {BrowserRouter as Router} from 'react-router-dom';
+import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
 import {useDispatch} from "react-redux";
 import {setNameForButton} from './state/settingsReducer';
+
 
 function App() {
     let dispatch = useDispatch()
 
-    useEffect( () => {
+
+    useEffect(() => {
         fetch('http://localhost:5000/data')
             .then(res => res.json())
             .then(res => dispatch(setNameForButton(res.nameButton)))
+
     }, [])
+
+
 
 
     return (
@@ -25,7 +29,7 @@ function App() {
             <Router>
                 <Header/>
                 <Routes>
-                    <Route  path={'/'} element={<Start/>}/>
+                    <Route path={'/'} element={<Start/>}/>
 
                     <Route path={'/start'} element={<Start/>}/>
                     <Route path={'/test'} element={<Test/>}/>
@@ -34,7 +38,6 @@ function App() {
 
                 <Footer/>
             </Router>
-
 
 
         </div>
