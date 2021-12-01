@@ -1,0 +1,22 @@
+.header {
+    height: 80px;
+    background: #1b1638;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 15px;
+}
+.header.headerFixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.name {
+    color: white;
+    font-family: Gilroy, Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+}

@@ -1,0 +1,12 @@
+.footer {
+    height: 50px;
+    background: black;
+    color: white;
+    font-family: Gilroy, Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 50px;
+}
+

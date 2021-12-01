@@ -1,0 +1,66 @@
+.startBlock {
+    margin: 80px auto 0 ;
+    height: 100vh;
+    background: #1b1638;
+    color: white;
+    font-family: Gilroy, Helvetica, Arial, sans-serif;
+}
+
+.startContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.title h1 {
+    margin: 50px auto;
+    font-size: 40px;
+    font-weight: 800;
+    letter-spacing: -0.82px
+}
+
+.conditions {
+    color: #b9c1cf;
+    font-family: "Noto Sans", Helvetica, Arial, sans-serif;
+    font-size: 18px;
+    line-height: 30px;
+    text-align: center;
+}
+
+.enterBlock {
+    width: 510px;
+    min-height: 40px;
+    background: white;
+    border-radius: 35px;
+    margin-top: 30px;
+    border: 5px solid #64d2e3;
+}
+
+.inputName {
+    width: 350px;
+    height: 40px;
+    outline: none;
+    border: none;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    padding: 10px 30px;
+    font-size: 20px;
+}
+
+.startButton {
+    height: 50px;
+    width: 150px;
+    border-radius: 30px;
+    border: none;
+    font-size: 20px;
+    background: linear-gradient(139deg, #61cde7, #8782f5, #ae60d0);
+    cursor: pointer;
+}
+.startButton:disabled {
+    background: lightblue;
+}
+.enterBlock a{
+    text-decoration: none;
+    color: white;
+}
