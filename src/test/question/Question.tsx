@@ -37,10 +37,8 @@ export const Question: React.FC<QuestionPropsType> = () => {
         setAnswer(e.currentTarget.value)
     }
     const onChangeCallback = (currentId: number, e: React.ChangeEvent<HTMLInputElement>) => {
-
         setAnswer(e.currentTarget.value)
     }
-
 
     const mappedOptions = currentQuestion && currentQuestion.answerType !== 'text'
         ? currentQuestion.answers.map((options) => (
@@ -77,7 +75,7 @@ export const Question: React.FC<QuestionPropsType> = () => {
 
             </div>
             {results.length >= 4
-                ? <button className={s.button}>
+                ? <button className={s.button} >
                     <Link to={'/results'}>{nameButton.nameFinishButton}</Link>
                 </button>
                 : <button className={s.button} onClick={addResultHandler}>{nameButton.nameNextButton}</button>

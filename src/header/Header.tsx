@@ -6,13 +6,12 @@ import {AppRootStateType} from "../state/store";
 
 
 export const Header = () => {
-    let finishClassName;
-    window.scrollY > 1000 ? finishClassName = `${s.header}` : finishClassName = `${s.header} ${s.headerFixed}`
+
 
     let userName = useSelector<AppRootStateType, string>(state => state.settings.userName)
 
         return (
-        <div className={finishClassName}>
+        <div className={s.header}>
             <div className={s.name}>Опрос проходит: {userName}</div>
             <Navbar/>
         </div>

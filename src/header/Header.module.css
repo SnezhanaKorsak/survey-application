@@ -1,18 +1,17 @@
 .header {
     height: 80px;
-    width: 100%;
     background: #1b1638;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding-left: 15px;
 }
-.header.headerFixed {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-}
+/*.header.headerFixed {*/
+/*    position: fixed;*/
+/*    top: 0;*/
+/*    left: 0;*/
+/*    */
+/*}*/
 
 .name {
     color: white;

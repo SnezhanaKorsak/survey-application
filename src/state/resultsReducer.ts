@@ -16,9 +16,7 @@ export const resultsReducer = (state = initialState, action: ActionType): IState
     switch (action.type) {
         case "ADD-RESULT":
             let newResult = {id: action.id, userAnswer: action.answer, quest: action.quest}
-            let copy = {...state, results: [...state.results, newResult]}
-            console.log(copy)
-            return  copy
+            return {...state, results: [...state.results, newResult]}
 
         default:
             return state
@@ -31,6 +29,6 @@ type ActionType = ReturnType<typeof addResult>
 export const addResult = (id: number, answer: string, quest: string) => {
     return {
         type: 'ADD-RESULT',
-        id, answer,quest
+        id, answer, quest
     } as const
 }

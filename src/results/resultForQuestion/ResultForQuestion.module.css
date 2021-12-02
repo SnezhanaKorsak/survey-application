@@ -46,3 +46,7 @@
     font-weight: bolder;
    line-height: 65px;
 }
+.questionNumber:hover {
+    border: 5px solid #fff;
+    box-shadow:0 0 20px #555;
+}
