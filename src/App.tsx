@@ -15,13 +15,13 @@ function App() {
 
 
     useEffect(() => {
-        fetch('http://localhost:5000/data')
+        fetch('https://61a8c15333e9df0017ea3ac5.mockapi.io/api/data/data')
             .then(res => res.json())
-            .then(res => dispatch(setNameForButton(res.nameButton)))
+            .then(res => dispatch(setNameForButton(res[0].nameButton)))
+        //.then(res => console.log(res[0].nameButton))
+
 
     }, [])
-
-
 
 
     return (

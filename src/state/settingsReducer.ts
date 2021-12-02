@@ -1,4 +1,3 @@
-import { Dispatch } from "redux"
 
 export type IState = {
     userName: string
@@ -63,11 +62,4 @@ export const setNameForButton = (date: ResponseType) => {
     } as const
 }
 
-export const getDateForButtonTC = () => (dispatch: Dispatch) => {
-    fetch('http://localhost:5000/data')
-        .then(res => res.json())
-        .then(res => {
-            dispatch(setNameForButton(res.nameButton))
-            console.log(res.nameButton)
-        })
-}
+

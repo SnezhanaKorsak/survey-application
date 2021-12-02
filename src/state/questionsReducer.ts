@@ -60,11 +60,10 @@ export const changeStatus = (isChecked: boolean) => {
 
 export const getQuestionTC = () => {
     return (dispatch: Dispatch) => {
-        fetch('http://localhost:5000/data')
+        fetch('https://61a8c15333e9df0017ea3ac5.mockapi.io/api/data/data')
         .then(res => res.json())
          .then(res => {
-             dispatch(setQuestion(res.questions))
+             dispatch(setQuestion(res[0].questions))
          })
-        //dispatch(setCurrentQuestion(id))
     }
 }
